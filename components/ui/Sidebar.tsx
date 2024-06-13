@@ -15,7 +15,7 @@ const Sidebar = () => {
                 const isActve = pathname === link.route || pathname.startsWith(`${link.route}/`)
                 return (
                   <Link href={link.route} key={link.label}
-                   className={cn("flex gap-4 items-center p-4 rounded-lg justify-start text-white",{"bg-blue-1": isActve})}
+                   className={cn("flex gap-4 items-center p-4 rounded-lg justify-start text-white hover:bg-blue-500",{"bg-blue-1": isActve})}
                   >
                     <Image src={link.imgUrl} alt={link.label} width={24} height={24}/>
                     {link.label}
