@@ -19,7 +19,7 @@ const Meeting = ({params: {id}}:{params: {id: string}}) => {
         <StreamCall call={call}>
           <StreamTheme>
             {!isSetupComplete? 
-            (<MeetingSetups />) : (<MeetingRoom />)}
+            (<MeetingSetups setIsSetupComplete={setIsSetupComplete} />) : (<MeetingRoom />)}
           </StreamTheme>
         </StreamCall>
       </main>
